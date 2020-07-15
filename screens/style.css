@@ -1,0 +1,67 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: 'Noto Sans TC', sans-serif;
+
+}
+.game-title {
+  font-size: 23px;
+}
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.top-bar .profile {
+  padding-right: 20px;
+}
+
+.connection-div {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  border: groove;
+}
+.connection-div .all-rooms {
+  display: flex;
+  flex-direction: column;
+}
+.connection-div .all-rooms table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+.connection-div .all-rooms table tbody tr:nth-child(odd) {
+  background-color: bisque;
+}
+.connection-div .all-rooms table tbody tr:nth-child(even) {
+  background-color: cornsilk;
+}
+.connection-div .each-room {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.game-div {
+  display: none;
+}
+
+#can {
+  border: dashed;
+}
+
+th {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.room-names {
+  font-style: italic;
+}
+/*# sourceMappingURL=style.css.map */

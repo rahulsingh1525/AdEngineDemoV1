@@ -5,35 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>AdEngine-demo 📺</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
 
-    <script src="localforage.js"></script>
+    <script src="../localforage.js"></script>
   </head>
-  <body>
-    <div id="notify"></div>
-    <div class="unmute-div" id="unmuteDiv" onclick="clickToUnMute()">
-      🔇
-    </div>
-    <div id="connect-div" class="connect-div full-div">
-      <div id="connection-code" class="ccode"></div>
-    </div>
-    <div id="stream-div" class="stream-div full-div">
-      <video
-        id="stream-vid"
-        type="video/mp4"
-        src="https://firebasestorage.googleapis.com/v0/b/adengine-new.appspot.com/o/streamsamples%2F2020-05-26%2023-00-54.mp4?alt=media&token=ada8f06c-892f-4781-a5c4-48041e944f5e"
-      ></video>
-    </div>
-    <div id="overlay-div" class="overlay-div full-div">
-      <video id="overlay-vid" src=""></video>
-    </div>
-    <div class="profile-container full-div" id="profile-update-div">
-      <div class="profile-internal">
+  <body class="full-div">
+    <div class="profile-container">
         <h3>Screen Name</h3>
-        <div class="create">
-          <input type="text" name="name" id="profile-input" />
-          <button id="profile-btn">Update Name</button>
-        </div>
+      <div class="create">
+        <input type="text" name="name" id="profile-input" />
+        <button id='profile-btn'>Update Name</button>
       </div>
     </div>
 
@@ -59,8 +40,6 @@
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
     </script>
-    <script src="new_kaaro.js"></script>
-    <script src="new/profile.js"></script>
-
+    <script src="profile.js"></script>
   </body>
 </html>

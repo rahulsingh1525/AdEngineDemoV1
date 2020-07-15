@@ -1,5 +1,6 @@
 body {
     position: relative;
+    margin: 0;
 }
 .full-div {
     position: absolute;
@@ -7,12 +8,19 @@ body {
     top: 0;
     height: 100vh;
     width: 100vw;
-    display: none;
+    z-index: 0;
+    /* display: none; */
 }
 
 .full-div video {
     height: 100%;
     width: 100%;
+}
+
+
+.overlay-div {
+    z-index: 10;
+    display: none;
 }
 
 #notify { 
@@ -22,4 +30,31 @@ body {
     top: 15px;
     left: 200px;
     z-index: 100;
+}
+
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    /* height: 100%; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(30, 10, 0, 0.2); */
+    /* opacity: 0.2; */
+}
+.profile-internal {
+    padding: 50px;
+    border-radius: 10px;
+    background-color: turquoise;
+    opacity: 1;
+}
+
+.unmute-div {
+    z-index: 15;
+    position: absolute;
+}
+
+#profile-update-div {
+    display: none;
 }

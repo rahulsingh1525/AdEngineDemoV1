@@ -347,18 +347,23 @@ function playVid() {
 
 function getCurrentStreamTime() {
   let streamElement = document.getElementById("stream-vid");
+  console.log("streamElement :" , streamElement);
+  console.log("streamElement.currentTime :" , streamElement.currentTime);
   return streamElement.currentTime;
 }
 
 function getCurrentAdPlayTime() {
     let overlayElement = document.getElementById("overlay-vid");
+	console.log("overlayElement :" , overlayElement);
+    console.log("overlayElement.currentTime :" , overlayElement.currentTime);
     return overlayElement.currentTime;
   }
 function getCurrentAdDuration() {
-let overlayElement = document.getElementById("overlay-vid");
-return overlayElement.duration;
+    let overlayElement = document.getElementById("overlay-vid");
+	console.log("overlayElement :" , overlayElement);
+    console.log("overlayElement.currentTime :" , overlayElement.duration);
+    return overlayElement.duration;
 }
-
 
 function muteStreamPlayback() {
   let streamElement = document.getElementById("stream-vid");

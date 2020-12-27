@@ -340,8 +340,9 @@ document.addEventListener('profile-updated', (e) => {
 
 
 function playVid() {
-    document.getElementById("stream-vid").muted = true;
+  document.getElementById("stream-vid").muted = true;
   document.getElementById("stream-vid").play();
+  console.log("before check for Ad Update");
   checkForAdUpdate();
 }
 
@@ -372,6 +373,7 @@ function muteStreamPlayback() {
 
 
 function checkForAdUpdate() {
+  console.log("inside check for Ad updates");
   let currentStreamTime = getCurrentStreamTime();
   if (current_ad_stack.length != 0) {
     let latestElement = current_ad_stack[current_ad_stack.length - 1];
